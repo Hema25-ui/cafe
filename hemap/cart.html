@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Delicious Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9f9;
+        }
+        header {
+            background-color: #f8c291;
+            padding: 20px;
+            text-align: center;
+        }
+        .shop-title {
+            font-size: 2.5em;
+            color: #d63031;
+            text-shadow: 2px 2px #ff9f43;
+        }
+        .cart-container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .cart-item img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .cart-item-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .cart-item-info h3 {
+            margin: 0;
+            color: #333;
+        }
+        .cart-item-info p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+        }
+        .cart-item-actions input {
+            width: 50px;
+            text-align: center;
+            margin-right: 10px;
+        }
+        .cart-item-actions button {
+            background-color: #d63031;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .cart-item-actions button:hover {
+            background-color: #ff9f43;
+        }
+        .checkout {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .checkout-total {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .checkout-button {
+            background-color: #d63031;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .checkout-button:hover {
+            background-color: #ff9f43;
+        }
+        footer {
+            background-color: #f8c291;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="shop-title">Delicious Bakery</h1>
+    </header>
+    
+    <div class="cart-container">
+        <div class="cart-item">
+            <img src="croissant.jpg" alt="Croissant">
+            <div class="cart-item-info">
+                <h3>Croissant</h3>
+                <p>Price: $2.50</p>
+            </div>
+            <div class="cart-item-actions">
+                <input type="number" value="1" min="1">
+                <button>Remove</button>
+            </div>
+        </div>
+        
+        <div class="cart-item">
+            <img src="chocolate.jpg" alt="Chocolate">
+            <div class="cart-item-info">
+                <h3>Chocolate</h3>
+                <p>Price: $3.00</p>
+            </div>
+            <div class="cart-item-actions">
+                <input type="number" value="1" min="1">
+                <button>Remove</button>
+            </div>
+        </div>
+        
+        <!-- Add more cart items here -->
+        
+        <div class="checkout">
+            <div class="checkout-total">Total: $5.50</div>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Products owned by Your Cafe.</p>
+    </footer>
+</body>
+</html>
